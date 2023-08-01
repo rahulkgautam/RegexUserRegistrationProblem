@@ -7,7 +7,7 @@ namespace RegexRegistration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regex Registration Problem...");
-            UserRegistration.UserEmail();
+            UserRegistration.UserPhoneNumber();
         }
     }
 }
