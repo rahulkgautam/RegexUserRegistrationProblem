@@ -11,7 +11,7 @@ namespace RegexRegistration
         {
             string password = "Password@123"; 
 
-            string pattern = @"^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$";
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
             bool isValid = Regex.IsMatch(password, pattern);
 
             Console.WriteLine($"Password is {password},Valid {isValid}");
