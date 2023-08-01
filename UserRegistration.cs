@@ -7,14 +7,14 @@ namespace RegexRegistration
 {
     class UserRegistration
     {
-        public static void UserLastName()
+        public static void UserEmail()
         {
-            string lastName = "Gautam"; 
+            string email = "abc.xyz@bl.co.in"; 
 
-            string pattern = @"^[A-Z][a-zA-Z]{2,}$";
-            bool isValid = Regex.IsMatch(lastName, pattern);
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+            bool isValid = Regex.IsMatch(email, pattern);
 
-            Console.WriteLine($"Last Name is {lastName},Valid {isValid}");
+            Console.WriteLine($"Email is {email},Valid {isValid}");
         }
     }
 }
