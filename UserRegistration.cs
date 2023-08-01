@@ -7,14 +7,14 @@ namespace RegexRegistration
 {
     class UserRegistration
     {
-        public static void UserPhoneNumber()
+        public static void UserPassword()
         {
-            string phoneNumber = "91 9919819801"; 
+            string password = "Password@123"; 
 
-            string pattern = @"^91 \d{10}$";
-            bool isValid = Regex.IsMatch(phoneNumber, pattern);
+            string pattern = @"^.{8,}$";
+            bool isValid = Regex.IsMatch(password, pattern);
 
-            Console.WriteLine($"Phone Number is {phoneNumber},Valid {isValid}");
+            Console.WriteLine($"Password is {password},Valid {isValid}");
         }
     }
 }
