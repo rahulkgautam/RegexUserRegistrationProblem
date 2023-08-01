@@ -7,14 +7,14 @@ namespace RegexRegistration
 {
     class UserRegistration
     {
-        public static void UserFirstName()
+        public static void UserLastName()
         {
-            string firstName = "Rahul";
+            string lastName = "Gautam"; 
 
             string pattern = @"^[A-Z][a-zA-Z]{2,}$";
-            bool isValid = Regex.IsMatch(firstName, pattern);
+            bool isValid = Regex.IsMatch(lastName, pattern);
 
-            Console.WriteLine($"First Name is {firstName},Valid {isValid}");
+            Console.WriteLine($"Last Name is {lastName},Valid {isValid}");
         }
     }
 }
